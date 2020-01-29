@@ -83,7 +83,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap; /* This tell's the flex items to wrap if there
                         isn't enough space for all of the items. Without this the
-                        faculty images will be in a row and only resize well unitl around
+                        faculty imag</div>es will be in a row and only resize well unitl around
                         550px width of screen. */
     justify-content: center;
     align-content: center;
@@ -95,7 +95,7 @@ h2 {
 }
 
 .office {
-  font-family: 'Marcellus', sans-sans-serif;;
+  font-family: 'Marcellus', sans-sans-serif;
 }
 
 img.pic {
@@ -104,6 +104,8 @@ img.pic {
 }
 
 #style ul {
+    /* Add a font here
+    */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -114,7 +116,6 @@ img.pic {
 #style li {
     float: left; /*explore what happens if this is 'right' instead*/
 }
-
 #style li a {
     display: block;
     color: white;
@@ -143,3 +144,43 @@ img.pic {
   background-color: #d5d6d2;
   padding: 25px;
 }
+
+#tools {
+  background-color: #f9f7f6;
+  width: 50%;
+}
+
+/*
+Blue designates a local tool
+*/
+.local a{
+  color: #3b0ddf;
+}
+
+/*
+Red designates a cloud tool
+*/
+.cloud a{
+  color: red
+}
+
+/*
+Italics designate a version-control tool
+*/
+.version-control a{
+    font-style: italic;
+}
+
+/*
+Bold designates a testing tool
+*/
+.testing a{
+    font-weight: bold;
+}
+
+/*
+The ide tools have normal font styles
+*/
+
+
+
