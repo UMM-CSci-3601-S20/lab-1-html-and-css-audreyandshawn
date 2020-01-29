@@ -147,23 +147,39 @@ img.pic {
 
 #tools {
   background-color: #f9f7f6;
+  width: 50%;
 }
 
-
+/*
+Blue designates a local tool
+*/
 .local a{
-  /* Add a font here
-    */
   color: #3b0ddf;
 }
 
+/*
+Red designates a cloud tool
+*/
 .cloud a{
-    /* Add a font here
-    */
   color: red
 }
 
 /*
-Just made these classes to change the fonts later when we want to distinctify between version control, ide and testing- Shawn
+Italics designate a version-control tool
+*/
+.version-control a{
+    font-style: italic;
+}
+
+/*
+Bold designates a testing tool
+*/
+.testing a{
+    font-weight: bold;
+}
+
+/*
+The ide tools have normal font styles
 */
 
 
