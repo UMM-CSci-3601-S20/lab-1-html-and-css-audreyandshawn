@@ -6,7 +6,72 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+#main-title {
+  font-style: italic;
+  text-align: center;
+}
+
 body{
     padding: 30px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
 }
+
+.section {
+  padding: 10px;
+  border-style: dashed;
+  border-width: 25px;
+  margin-bottom: 20px;
+}
+
+#pslo {
+    background-color: #7A0019;
+    border-color: white;
+    color: white;
+    margin-right: 15px;
+}
+
+#courses {
+  background-color: #ffcc13;
+  border-color: white;
+  margin-left: 15px;
+}
+
+#faculty {
+  background-color: black;
+  border-color: white;
+  color: white;
+  text-align: center;
+}
+
+#faculty-list {
+  list-style: none;
+
+
+}
+
+#faculty-list ul{
+  align-content: center;
+
+}
+
+#faculty-list li{
+  padding: 6%;
+}
+
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  #faculty-list{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  #faculty-list li{
+    padding-top: 0%;
+    padding-bottom: 25px;
+  }
+}
+
