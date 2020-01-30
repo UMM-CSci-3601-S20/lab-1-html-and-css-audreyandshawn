@@ -65,10 +65,37 @@ body{
   border-style: dashed;
   border-color: white;
   border-width: 25px;
+  padding: 20px;
 }
 
-.card-title {
-    font-family: 'EB Garamond', serif;
+h6{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.75em;
+}
+
+#style ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#style li{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#style a:link, a:visited{
+  position: relative;
+  top: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 925px) {
@@ -94,6 +121,11 @@ body{
     position: relative;
     bottom: 325px;
     width: 61%;
+  }
+  #style {
+    position: absolute;
+    top: 5px;
+    left: 15px;
   }
 }
 
