@@ -13,7 +13,7 @@ use float to make something locate itself on the right or left
 
 body{
     padding: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(97, 89, 89);
 }
 
 .section {
@@ -25,20 +25,20 @@ body{
 
 #pslo {
     background-color: #7A0019;
-    border-color: white;
+    border-color:rgb(97, 89, 89);
     color: white;
     margin-right: 15px;
 }
 
 #courses {
   background-color: #ffcc13;
-  border-color: white;
+  border-color: rgb(97, 89, 89);
   margin-left: 15px;
 }
 
 #faculty {
   background-color: black;
-  border-color: white;
+  border-color: rgb(97, 89, 89);
   color: white;
   text-align: center;
 }
@@ -57,13 +57,14 @@ body{
 
 #tools {
   background-color: #ffcc13;
-  border-color: white;
+  border-color: rgb(97, 89, 89);
+
 }
 
 #validation {
   background-color: #7A0019;
   border-style: dashed;
-  border-color: white;
+  border-color:rgb(97, 89, 89);
   border-width: 25px;
   padding: 20px;
 }
@@ -94,9 +95,11 @@ h6{
 #style a:link, a:visited{
   position: relative;
   top: 5px;
-  color: white;
+  color: rgb(97, 89, 89);
   text-decoration: none;
 }
+
+
 
 @media screen and (min-width: 925px) {
   .pslo-courses-container {
