@@ -198,6 +198,10 @@ a:visited {
 
 @media screen and (max-width: 925px) {
 
+  ul{
+    padding: 0;
+  }
+  
   .section {
     margin: 5%;
     margin-bottom: 20px;
