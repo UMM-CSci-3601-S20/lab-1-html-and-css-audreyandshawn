@@ -169,7 +169,6 @@ a:visited {
     padding-right: 6%;
   }
 
-
   #tools{
     width: 30%;
   }
@@ -205,7 +204,7 @@ a:visited {
   }
 
   #pic {
-    width: 100%;
+    width: 50px;
     height: auto;
   }
 
