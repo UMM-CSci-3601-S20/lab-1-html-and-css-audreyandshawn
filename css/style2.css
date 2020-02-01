@@ -67,10 +67,6 @@ body{
   padding: 6%;
 }
 
-#pic{
-  size: auto;
-}
-
 #tools {
   background-color: #ffcc13;
   border-color: rgb(150,150,150);
@@ -202,8 +198,15 @@ a:visited {
 }
 
 @media screen and (max-width: 925px) {
+
   .section {
     margin: 5%;
     margin-bottom: 20px;
   }
+
+  #pic {
+    width: 20%;
+    height: auto;
+  }
+
 }
