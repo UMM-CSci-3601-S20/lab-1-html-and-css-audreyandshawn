@@ -67,6 +67,10 @@ body{
   padding: 6%;
 }
 
+#pic{
+  size: auto;
+}
+
 #tools {
   background-color: #ffcc13;
   border-color: rgb(150,150,150);
@@ -80,7 +84,9 @@ body{
   padding: 20px;
   min-height: 210px;
 }
-
+#faculty-list li{
+  padding: 6%;
+}
 h6{
   font-family: 'EB Garamond', serif;
   font-size: 1.5em;
@@ -136,7 +142,7 @@ a:visited {
 
 #style {
   position: relative;
-  left: 25%;
+  left: 50%;
 }
 
 @media screen and (min-width: 925px) {
@@ -167,6 +173,7 @@ a:visited {
     padding-right: 6%;
   }
 
+
   #tools{
     width: 30%;
   }
@@ -188,5 +195,15 @@ a:visited {
     top: 5px;
     left: 15px;
   }
+
+  #faculty-list li{
+  padding: 6%;
+  }
 }
 
+@media screen and (max-width: 925px) {
+  .section {
+    margin: 5%;
+    margin-bottom: 20px;
+  }
+}
