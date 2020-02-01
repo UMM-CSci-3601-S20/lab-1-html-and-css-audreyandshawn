@@ -204,7 +204,8 @@ a:visited {
   }
 
   img {
-    width: 50px;
+    width: auto;
+    max-width: 100%;
     height: auto;
   }
 
