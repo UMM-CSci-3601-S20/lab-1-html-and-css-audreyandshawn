@@ -73,6 +73,7 @@ body{
 }
 
 #validation {
+  color: white;
   background-color: #7A0019;
   border-style: dashed;
   border-color:rgb(150,150,150);
@@ -80,9 +81,11 @@ body{
   padding: 20px;
   min-height: 210px;
 }
+
 #faculty-list li{
   padding: 6%;
 }
+
 h6{
   font-family: 'EB Garamond', serif;
   font-size: 1.5em;
@@ -116,16 +119,16 @@ h6{
 
 /*
   Rule #3
-  Links are dark gray until they are visited at which point they are light gray
+  Links are gold until they are visited at which point they are white
 */
 a:link {
-  color: rgb(46, 46, 46);
+  color: #ffcc13;
 }
 a:visited {
-  color: rgb(150, 150, 150);
+  color: rgb(255, 255, 255);
 }
 
-/*
+/*divsion
   Below is an example of grouping
   (It's also an example of nesting)
 */
@@ -141,7 +144,7 @@ a:visited {
   left: 50%;
 }
 
-@media screen and (min-width: 925px) {
+@media screen and (min-width: 550px) {
   
   /*
     Below is an example of a class
@@ -159,18 +162,19 @@ a:visited {
   #faculty-list{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 100%;
   }
 
   #faculty-list li{
     padding-top: 0%;
     padding-bottom: 25px;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
   #tools{
-    width: 30%;
+    width: 25%;
   }
 
   /*
@@ -194,6 +198,7 @@ a:visited {
   #faculty-list li{
   padding: 6%;
   }
+
 }
 
 @media screen and (max-width: 925px) {
@@ -215,3 +220,35 @@ a:visited {
   }
 
 }
+
+/*
+Blue designates a local tool
+*/
+.local a{
+  color: #3b0ddf;
+}
+
+/*
+Red designates a cloud tool
+*/
+.cloud a{
+  color: red
+}
+
+/*
+Italics designate a version-control tool
+*/
+.version-control a{
+    font-style: italic;
+}
+
+/*
+Bold designates a testing tool
+*/
+.testing a{
+    font-weight: bold;
+}
+
+/*
+The ide tools have normal font styles
+*/
