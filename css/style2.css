@@ -215,3 +215,31 @@ a:visited {
   }
 
 }
+
+/*
+Blue designates a local tool
+*/
+.local a{
+  color: #3b0ddf;
+}
+
+/*
+Red designates a cloud tool
+*/
+.cloud a{
+  color: red
+}
+
+/*
+Italics designate a version-control tool
+*/
+.version-control a{
+    font-style: italic;
+}
+
+/*
+Bold designates a testing tool
+*/
+.testing a{
+    font-weight: bold;
+}
