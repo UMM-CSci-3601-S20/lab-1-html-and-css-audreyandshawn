@@ -6,6 +6,9 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+/*
+  Below is an example of an id
+*/
 #main-title {
   font-style: italic;
   text-align: center;
@@ -13,9 +16,15 @@ use float to make something locate itself on the right or left
 
 body{
     padding: 30px;
-    background-color: rgb(97, 89, 89);
+    background-color: rgb(150,150,150);
 }
 
+/*
+  Rule #1
+  Describes how general divisions will look
+  Adds text padding and margins between sections
+  Modifies border to be dashed and 25px size
+*/
 .section {
   padding: 10px;
   border-style: dashed;
@@ -25,20 +34,20 @@ body{
 
 #pslo {
     background-color: #7A0019;
-    border-color:rgb(97, 89, 89);
+    border-color:rgb(150,150,150);
     color: white;
     margin-right: 15px;
 }
 
 #courses {
   background-color: #ffcc13;
-  border-color: rgb(97, 89, 89);
+  border-color: rgb(150,150,150);
   margin-left: 15px;
 }
 
 #faculty {
   background-color: black;
-  border-color: rgb(97, 89, 89);
+  border-color: rgb(150,150,150);
   color: white;
   text-align: center;
 }
@@ -47,6 +56,9 @@ body{
   list-style: none;
 }
 
+/*
+  Below is an example of nesting
+*/
 #faculty-list ul{
   align-content: center;
 }
@@ -57,21 +69,22 @@ body{
 
 #tools {
   background-color: #ffcc13;
-  border-color: rgb(97, 89, 89);
-
+  border-color: rgb(150,150,150);
 }
 
 #validation {
   background-color: #7A0019;
   border-style: dashed;
-  border-color:rgb(97, 89, 89);
+  border-color:rgb(150,150,150);
   border-width: 25px;
   padding: 20px;
+  min-height: 210px;
 }
 
 h6{
   font-family: 'EB Garamond', serif;
-  font-size: 1.75em;
+  font-size: 1.5em;
+  margin: 0px;
 }
 
 #style ul{
@@ -80,6 +93,13 @@ h6{
   flex-direction: row;
 }
 
+/*
+  Rule #2
+  Modifying list elements in the navigation bar
+  Changing background color and text color
+  Changing shape to circle
+  Centering text in circles
+*/
 #style li{
   background-color: black;
   color: white;
@@ -92,39 +112,77 @@ h6{
   vertical-align: middle;
 }
 
+/*
+  Rule #3
+  Links are dark gray until they are visited at which point they are light gray
+*/
+a:link {
+  color: rgb(46, 46, 46);
+}
+a:visited {
+  color: rgb(150, 150, 150);
+}
+
+/*
+  Below is an example of grouping
+  (It's also an example of nesting)
+*/
 #style a:link, a:visited{
   position: relative;
-  top: 5px;
-  color: rgb(97, 89, 89);
+  top: 15px;
+  color: white;
   text-decoration: none;
 }
 
-
+#style {
+  position: relative;
+  left: 25%;
+}
 
 @media screen and (min-width: 925px) {
+  
+  /*
+    Below is an example of a class
+  */
   .pslo-courses-container {
     display: flex;
     flex-direction: row;
     max-width: 100%;
   }
+
+  /*
+    Rule #4
+    Reorganizes faculty list from vertical to horizontal when screen is at least 925px
+  */
   #faculty-list{
     display: flex;
     flex-direction: row;
     max-width: 100%;
   }
+
   #faculty-list li{
     padding-top: 0%;
     padding-bottom: 25px;
+    padding-left: 6%;
+    padding-right: 6%;
   }
+
   #tools{
     width: 30%;
   }
+
+  /*
+    Rule #5
+    Moved Validation list to the right of Tools when the screen is at least 925px 
+    Modified width to compliment the size of Tools list
+  */
   #validation {
     float: right;
     position: relative;
-    bottom: 325px;
+    bottom: 315px;
     width: 61%;
   }
+
   #style {
     position: absolute;
     top: 5px;
