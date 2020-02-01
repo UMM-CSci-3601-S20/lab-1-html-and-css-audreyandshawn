@@ -219,6 +219,10 @@ a:visited {
     height: auto;
   }
 
+  #validation {
+    width: fit-content;
+  }
+
 }
 
 /*
