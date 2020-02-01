@@ -119,10 +119,10 @@ h6{
   Links are dark gray until they are visited at which point they are light gray
 */
 a:link {
-  color: rgb(46, 46, 46);
+  color: #ffcc13;
 }
 a:visited {
-  color: rgb(150, 150, 150);
+  color: rgb(255, 255, 255);
 }
 
 /*
@@ -179,6 +179,7 @@ a:visited {
     Modified width to compliment the size of Tools list
   */
   #validation {
+    color: white;
     float: right;
     position: relative;
     bottom: 315px;
