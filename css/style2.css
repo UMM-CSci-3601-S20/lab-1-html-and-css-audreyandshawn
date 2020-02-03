@@ -7,11 +7,16 @@ use float to make something locate itself on the right or left
 */
 
 /*
-  Below is an example of an id
+  Rule #1
+  Increases and italicizes font
+  Centers text
+  Lowered text to not interfere with style selector
 */
 #main-title {
   font-style: italic;
   text-align: center;
+  margin-top: 50px;
+  font-size: 2.5em;
 }
 
 body{
@@ -20,7 +25,7 @@ body{
 }
 
 /*
-  Rule #1
+  Rule #2
   Describes how general divisions will look
   Adds text padding and margins between sections
   Modifies border to be dashed and 25px size
@@ -32,6 +37,9 @@ body{
   margin-bottom: 20px;
 }
 
+/*
+  Below is an example of an id
+*/
 #pslo {
     background-color: #7A0019;
     border-color:rgb(150,150,150);
@@ -45,15 +53,32 @@ body{
   margin-left: 15px;
 }
 
+.faculty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #faculty {
   background-color: black;
   border-color: rgb(150,150,150);
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 #faculty-list {
   list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 /*
@@ -64,7 +89,9 @@ body{
 }
 
 #faculty-list li{
-  padding: 6%;
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
 }
 
 #tools {
@@ -82,10 +109,6 @@ body{
   min-height: 210px;
 }
 
-#faculty-list li{
-  padding: 6%;
-}
-
 h6{
   font-family: 'EB Garamond', serif;
   font-size: 1.5em;
@@ -96,10 +119,14 @@ h6{
   list-style: none;
   display: flex;
   flex-direction: row;
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 /*
-  Rule #2
+  Rule #3
   Modifying list elements in the navigation bar
   Changing background color and text color
   Changing shape to circle
@@ -115,10 +142,11 @@ h6{
   width: 50px;
   text-align: center;
   vertical-align: middle;
+  float: middle;
 }
 
 /*
-  Rule #3
+  Rule #4
   Links are gold until they are visited at which point they are white
 */
 a:link {
@@ -128,7 +156,7 @@ a:visited {
   color: rgb(255, 255, 255);
 }
 
-/*divsion
+/*
   Below is an example of grouping
   (It's also an example of nesting)
 */
@@ -139,13 +167,22 @@ a:visited {
   text-decoration: none;
 }
 
+/*
+  Rule #5
+  Repositions style selector to be top and center
+*/
 #style {
-  position: relative;
-  left: 50%;
+   position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    height: 55px;
+    padding-top: 10px;
+    margin-left: -75px;
 }
 
-@media screen and (min-width: 550px) {
-  
+@media screen and (min-width: 925px) {
+
   /*
     Below is an example of a class
   */
@@ -155,74 +192,22 @@ a:visited {
     max-width: 100%;
   }
 
-  /*
-    Rule #4
-    Reorganizes faculty list from vertical to horizontal when screen is at least 925px
-  */
-  #faculty-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-
-  #faculty-list li{
-    padding-top: 0%;
-    padding-bottom: 25px;
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-  #tools{
-    width: 25%;
-  }
-
-  /*
-    Rule #5
-    Moved Validation list to the right of Tools when the screen is at least 925px 
-    Modified width to compliment the size of Tools list
-  */
-  #validation {
-    float: right;
-    position: relative;
-    bottom: 315px;
-    width: 61%;
-  }
-
-  #style {
-    position: absolute;
-    top: 5px;
-    left: 15px;
-  }
-
-  #faculty-list li{
-  padding: 6%;
-  }
-
 }
 
 @media screen and (max-width: 925px) {
 
-  #faculty-list ul, li{
-    padding: 0;
+  #courses {
+    margin-left: 0;
   }
 
-  .section {
-    margin: 5%;
-    margin-bottom: 20px;
-    width: 100%;
+  #pslo {
+    margin-right: 0;
   }
 
   img {
     width: auto;
     max-width: 100%;
     height: auto;
-  }
-
-  #validation {
-    margin: 5%;
-    margin-bottom: 20px;
-    width: 100%;
   }
 
 }
